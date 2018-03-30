@@ -1,0 +1,15 @@
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/gems/websocket-driver-0.6.5/ext/websocket-driver
+/home/kikluz/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20180330-11553-igvm11.rb extconf.rb
+creating Makefile
+
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20180330-11553-1oukmkw

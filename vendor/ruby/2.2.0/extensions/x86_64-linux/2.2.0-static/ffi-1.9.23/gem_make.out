@@ -1,0 +1,63 @@
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/ruby/2.2.0/gems/ffi-1.9.23/ext/ffi_c
+/home/kikluz/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20180330-23344-fr5a1p.rb extconf.rb
+checking for ffi_call() in -lffi... yes
+checking for ffi_closure_alloc()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for shlwapi.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/ruby/2.2.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR=" clean
+
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/ruby/2.2.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR="
+compiling StructByValue.c
+compiling Closure.c
+compiling Thread.c
+compiling FunctionInfo.c
+compiling StructByReference.c
+compiling ArrayType.c
+compiling Call.c
+In file included from Call.h:36:0,
+                 from Function.h:48,
+                 from Call.c:57:
+Call.c: In function ‘rbffi_do_blocking_call’:
+Thread.h:78:39: warning: implicit declaration of function ‘rb_thread_call_without_gvl’ [-Wimplicit-function-declaration]
+ # define rbffi_thread_blocking_region rb_thread_call_without_gvl
+                                       ^
+Call.c:334:5: note: in expansion of macro ‘rbffi_thread_blocking_region’
+     rbffi_thread_blocking_region(call_blocking_function, data, (void *) -1, NULL);
+     ^
+compiling LastError.c
+compiling MemoryPointer.c
+compiling Variadic.c
+compiling Function.c
+Function.c: In function ‘async_cb_event’:
+Function.c:569:9: warning: implicit declaration of function ‘rb_thread_call_without_gvl’ [-Wimplicit-function-declaration]
+         rb_thread_call_without_gvl(async_cb_wait, &w, async_cb_stop, &w);
+         ^
+compiling MethodHandle.c
+compiling Struct.c
+compiling LongDouble.c
+compiling StructLayout.c
+compiling MappedType.c
+compiling DataConverter.c
+compiling Buffer.c
+compiling AbstractMemory.c
+compiling ffi.c
+compiling DynamicLibrary.c
+compiling Type.c
+compiling Pointer.c
+compiling Types.c
+compiling Platform.c
+linking shared-object ffi_c.so
+
+current directory: /home/kikluz/development/personal/rails/sample_app/vendor/ruby/2.2.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20180330-23344-9oq5gp
